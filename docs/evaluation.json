@@ -1,0 +1,147 @@
+{
+  "purpose": "14 author-written fictional files; no independent benchmark or measured human time savings",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "threshold": 0.3,
+  "margin": 0.06,
+  "cases": [
+    {
+      "name": "copy-01.md",
+      "expected": "cooking",
+      "actual": "cooking",
+      "score": 0.4178,
+      "gap": 0.206,
+      "suggestion": "cooking",
+      "duplicate_of": null
+    },
+    {
+      "name": "copy-02.md",
+      "expected": "garden",
+      "actual": "garden",
+      "score": 0.4387,
+      "gap": 0.2383,
+      "suggestion": "garden",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-01.md",
+      "expected": "duplicate",
+      "actual": "duplicate",
+      "score": 0.4178,
+      "gap": 0.206,
+      "suggestion": "cooking",
+      "duplicate_of": "copy-01.md"
+    },
+    {
+      "name": "note-02.md",
+      "expected": "duplicate",
+      "actual": "duplicate",
+      "score": 0.4387,
+      "gap": 0.2383,
+      "suggestion": "garden",
+      "duplicate_of": "copy-02.md"
+    },
+    {
+      "name": "note-03.md",
+      "expected": "travel",
+      "actual": "travel",
+      "score": 0.5362,
+      "gap": 0.4524,
+      "suggestion": "travel",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-04.txt",
+      "expected": "cooking",
+      "actual": "cooking",
+      "score": 0.4656,
+      "gap": 0.4227,
+      "suggestion": "cooking",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-05.md",
+      "expected": "garden",
+      "actual": "garden",
+      "score": 0.447,
+      "gap": 0.2564,
+      "suggestion": "garden",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-06.md",
+      "expected": "travel",
+      "actual": "travel",
+      "score": 0.3724,
+      "gap": 0.2635,
+      "suggestion": "travel",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-07.md",
+      "expected": "cooking",
+      "actual": "cooking",
+      "score": 0.3413,
+      "gap": 0.0629,
+      "suggestion": "cooking",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-08.md",
+      "expected": "garden",
+      "actual": "garden",
+      "score": 0.3479,
+      "gap": 0.1874,
+      "suggestion": "garden",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-09.md",
+      "expected": "travel",
+      "actual": "travel",
+      "score": 0.3855,
+      "gap": 0.2711,
+      "suggestion": "travel",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-10.txt",
+      "expected": "_review",
+      "actual": "_review",
+      "score": 0.0795,
+      "gap": 0.022,
+      "suggestion": "cooking",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-11.md",
+      "expected": "_review",
+      "actual": "cooking",
+      "score": 0.3851,
+      "gap": 0.0919,
+      "suggestion": "cooking",
+      "duplicate_of": null
+    },
+    {
+      "name": "note-12.md",
+      "expected": "_review",
+      "actual": "_review",
+      "score": 0.0618,
+      "gap": 0.0494,
+      "suggestion": "cooking",
+      "duplicate_of": null
+    }
+  ],
+  "correct": 13,
+  "total": 14,
+  "copies": 12,
+  "duplicates": 2,
+  "review_copies": 2,
+  "sources_byte_identical": true,
+  "undo_deleted_files": 0,
+  "recovery_preserved": true,
+  "first_plan_ms": 25.4,
+  "warm_plan_median_ms": 14.92,
+  "apply_ms": 1.87,
+  "notes": "Timings exclude model loading. Score and margin thresholds are uncalibrated. Filename-only baseline has no category clues in note-N filenames. No comparison to a human filing session was conducted."
+}

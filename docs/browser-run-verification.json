@@ -1,0 +1,11 @@
+{
+  "source": "actual fixed fictional-inbox browser apply and undo",
+  "runs": [
+    {
+      "state": "recovered",
+      "copies": 12,
+      "duplicates": 2,
+      "all_copy_hashes_match_manifest": true
+    }
+  ]
+}

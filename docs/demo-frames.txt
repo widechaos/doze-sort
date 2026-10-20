@@ -1,0 +1,11 @@
+file '01-ready.jpg'
+duration 7
+file '02-plan.jpg'
+duration 7
+file '03-copies.jpg'
+duration 7
+file '04-recovered.jpg'
+duration 7
+file '05-mobile.jpg'
+duration 7
+file '05-mobile.jpg'
